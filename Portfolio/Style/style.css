@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #171717;
+    color: #fefcfb;
+    font-family: 'EB Garamond', serif;
+}
+
+h1{
+    font-size: clamp(1.5rem, 9vw, 2.5rem);
+    font-weight: bold;
+}
+
+h2{
+    font-weight: bold;
+}
+
+h3{
+    font-size: clamp(1rem, 2.5vw ,1.5rem);
+}
+
+/* Id */
+
+#header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: black;
+    margin-bottom: 20px;
+    /* position: fixed;
+    z-index: 2; */
+}
+
+#work{
+    display: grid;
+    grid-template-rows: repeat(2, .5fr);
+    row-gap: 20px;
+}
+
+#drop{
+    /* display: block; */
+    position: absolute;
+    bottom: 1000px;
+    height: 100%;
+    width: 100%;
+    background-color: #171717;
+}
+
+/* #main{
+    display: none;
+} */
+
+/* Class */
+
+.project{
+    z-index: 1;
+    background-color: black;
+    border-radius: 5%;
+    padding: 20px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.project img {
+    width: 100%;
+}
+
+.float{
+    justify-self: end;
+    padding-top: 5px;
+    padding-right: 20px;
+}
+
+.title{
+    padding-left: 20px;
+}
+
+.button{
+    background-color: black;
+    border-color: black;
+    outline: none;
+    /* box-shadow: none; */
+    border-style: solid;
+    color: white;
+}
+
+.button:hover{
+    color: grey;
+}
+
+.list{
+    margin-top: 45vh;
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+.item{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fefcfb;
+}
+
+.item:hover{
+    color: grey;
+}
+
+.arrow{
+    padding-left: .5em;
+    padding-top: .5em;
+}
+
+.arrow:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+i{
+    font-size: 25px;
+}
