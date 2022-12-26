@@ -4,6 +4,15 @@ let main = document.getElementById("main");
 let drop = document.getElementById("icon");
 let arrow = document.querySelector(".arrow");
 let nav = document.getElementById("nav");
+let link = document.querySelectorAll("#link");
+
+let prevent = x => {
+    link.forEach(li => {
+        li.addEventListener("click", x => {
+            x.preventDefault();
+        });
+    });
+}
 
 let dropDown = x => {
     drop.addEventListener("click", x => {
@@ -28,7 +37,7 @@ let width = x => {
     }else{
         gsap.to(nav, {display: "none"});
         gsap.to(drop, {display: "block"});
-    }
+    };
 
     window.addEventListener("resize", x => {
         if(window.screen.width >= 1024){
@@ -39,8 +48,10 @@ let width = x => {
             drop.style.display = "block";
         }
     });
-}
+};
 
-width();
+
+prevent();
 dropDown();
 changeStyle();
+width();
